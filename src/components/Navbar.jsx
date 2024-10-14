@@ -12,16 +12,16 @@ const Navbar = () => {
     const menuOptions = [
         {
             id: 1,
-            name: 'Home',
-            href: '/#home',
+            name: 'home',
+            href: '#home',
         },{
             id: 2,
-            name: 'Sobre',
-            href: '/#sobre',
+            name: 'sobre',
+            href: '#sobre',
         },{
             id: 3,
-            name: 'Contato',
-            href: '/#contato',
+            name: 'contato',
+            href: '#contato',
         }
     ]
   return (
@@ -29,9 +29,7 @@ const Navbar = () => {
         <img src='' className='h-8 w-8' alt='Logo' />
         <div className="flex">
         {menuOptions.map((options, index) => (
-                <Link href={options.href} key={index} className={cn(
-                    { "underline decoration-solid decoration-red-600" : options.href === activeSection}
-                )}>
+                <Link href={options.href} key={index}  >
                     <h1 className="text-black dark:text-white font-semibold text-xl pr-8">{options.name}</h1>
                 </Link>
             ))}
