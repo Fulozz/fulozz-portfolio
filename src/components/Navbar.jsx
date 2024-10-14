@@ -4,11 +4,11 @@ import ThemeSwitcher from './ThemeSwitcher'
 import {AlignJustify} from 'lucide-react'
 import { cn } from '@/utils/cn';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+
 
 const Navbar = () => {
     const [activeSection, setActiveSection] = useState("")
-    console.log(pathname)
+
     const menuOptions = [
         {
             id: 1,
@@ -31,7 +31,7 @@ const Navbar = () => {
         {menuOptions.map((options, index) => (
                 <Link href={options.href} key={index} className={cn(
                     { "underline decoration-solid decoration-red-600" : options.href === activeSection}
-                )} onClick={setActiveSection(`${options.name}`)}>
+                )}>
                     <h1 className="text-black dark:text-white font-semibold text-xl pr-8">{options.name}</h1>
                 </Link>
             ))}
