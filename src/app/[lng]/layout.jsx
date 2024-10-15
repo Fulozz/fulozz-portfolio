@@ -23,7 +23,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Portfolio",
+  title: "Thiago Silva Andrade - Portifolio",
   description: "Portifolio de Thiago Silva Andrade",
 };
 

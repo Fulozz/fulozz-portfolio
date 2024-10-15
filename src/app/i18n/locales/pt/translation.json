@@ -1,5 +1,9 @@
 {
-    "title": "DESENVOLVEDOR FULL-STACK",
-    "homeSubtitle": "Eu sou um Full-Stack Developer e trabalho remotamente de Minas Gerais, Brasil."
-
+  "navbarButton": "Fale comigo",
+  "navbarContact":"Contato",
+  "navbarAbout":"Sobre",
+  "navbarProjects":"Projetos",
+  "title": "DESENVOLVEDOR FULL-STACK",
+  "homeSubtitle": "Eu sou um Full-Stack Developer e trabalho remotamente de Minas Gerais, Brasil.",
+  "languageSwitcher": "Mude de lingua de <1>{{lng}}</1> para: "
 }

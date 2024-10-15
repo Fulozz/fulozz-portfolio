@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import { Sun, Moon } from "lucide-react";
 import { cn } from "@/utils/cn";
 
-const ThemeSwitcher = () => {
+export default function ThemeSwitcher  () {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   // cada vez que atualiza remonta a página
@@ -29,4 +29,3 @@ const ThemeSwitcher = () => {
     </div>
   );
 };
-export default ThemeSwitcher;
