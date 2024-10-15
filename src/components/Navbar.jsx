@@ -1,13 +1,11 @@
 "use client";
-import React, { useState } from 'react'
-import ThemeSwitcher from './ThemeSwitcher'
-import {AlignJustify} from 'lucide-react'
-import { cn } from '@/utils/cn';
+import React from 'react'
+import ThemeSwitcher from './switchers/ThemeSwitcher'
 import Link from 'next/link';
 
 
 const Navbar = () => {
-    const [activeSection, setActiveSection] = useState("")
+
 
     const menuOptions = [
         {
@@ -25,18 +23,19 @@ const Navbar = () => {
         }
     ]
   return (
-    <div className='flex items-center justify-between bg-white dark:bg-slate-800  h-20  py-8 px-[110px]'>
-        <img src='' className='h-8 w-8' alt='Logo' />
+    <div className='flex items-center justify-between text-black dark:text-white   border-[rgba(54,11,89,0.8)] border-2 h-20  py-2 px-8 mx-[60px] my-4 border-dotted rounded-full'>
+
         <div className="flex">
-        {menuOptions.map((options, index) => (
+            <a href='#' className='font-semibold text-xl pr-[80px]'>Thiago Silva Andrade</a> 
+                {menuOptions.map((options, index) => (
                 <Link href={options.href} key={index}  >
-                    <h1 className="text-black dark:text-white font-semibold text-xl pr-8">{options.name}</h1>
+                    <h1 className="  font-semibold text-lg pr-8">{options.name}</h1>
                 </Link>
             ))}
         </div>
         <div className="items-center hidden md:flex lg:flex">
             <ThemeSwitcher />
-            <a href='#' className='text-black dark:text-white font-semibold text-xl'>CONTACT</a>
+            <a href='#' className=' font-semibold text-lg bg-[rgba(54,11,89,0.6)] rounded-full px-5 py-2'>Fale comigo</a>
         </div>
     </div>
   )

@@ -15,17 +15,13 @@ const ThemeSwitcher = () => {
     <div>
       <button
         className={cn(
-          "w-fit p-2 rounded-md hover:scale-110 active:scale-100 duration-200 bg-transparent",
-          {
-            "text-slate-800 dark:text-slate-50": theme === "light",
-            "text-slate-50 dark:text-slate-800": theme === "dark",
-          }
+          "w-fit p-2 rounded-md hover:scale-110 active:scale-100 duration-200 bg-transparent"
         )}
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       >
         {" "}
         {theme === "light" ? (
-          <Moon className="text-white" />
+          <Moon className="text-black" />
         ) : (
           <Sun className="text-white" />
         )}{" "}

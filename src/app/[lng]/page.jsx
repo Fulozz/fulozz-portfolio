@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar";
-import HomeView from "../Pages/home/HomeView";
+import HomeView from "../../pages/HomeView";
 
 
-export default function Page() {
+export default function Page({ params: {lng} }) {
   return (
     <div className="">
       <Navbar />
