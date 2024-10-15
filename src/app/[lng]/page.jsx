@@ -1,12 +1,14 @@
 import Navbar from "@/components/Navbar";
 import HomeView from "../../pages/HomeView";
+import { useTranslation } from "../i18n";
 
-
-export default function Page({ params: {lng} }) {
+export default async function Page({ params: {lng} }) {
+  const { t } = await useTranslation(lng);
   return (
     <div className="">
       <Navbar />
-      <HomeView />
+      {/* <HomeView /> */}
+      <h1>{t('title')} </h1>
     </div>
   );
 }
