@@ -6,7 +6,7 @@ const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="relative">
+        <div className="relative md:hidden lg:hidden">
             <button
                 className="text-gray-800 dark:text-white focus:outline-none"
                 onClick={() => setIsOpen(!isOpen)}
@@ -14,7 +14,7 @@ const HamburgerMenu = () => {
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
             <div
-                className={`absolute top-0 right-0 w-full h-full bg-white dark:bg-gray-800 opacity-90 transition-opacity ${
+                className={`absolute top-0 right-0 w-full h-full dark:text-white text-gray-800 opacity-90 transition-opacity ${
                     isOpen ? 'block' : 'block'
                 }`}
             >
