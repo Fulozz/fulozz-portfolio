@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const languages = ['en', 'pt'];
+const nextConfig = {
+   
+};
 
 export default nextConfig;
